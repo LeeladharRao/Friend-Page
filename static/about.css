@@ -5,7 +5,7 @@
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
 }
 
-* {
+#aboutsection {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -13,16 +13,11 @@
 
 .align-center {
   font-family: 'Pacifico', cursive;
-
   font-size: 20px;
   text-align: center;
 }
 
-body {
-  background: #f2f2f2;
-}
-
-.container {
+.aboutsection {
   font-family: 'Open Sans', Arial, Sans-serif;
   max-width: 1200px;
   width: 70%;

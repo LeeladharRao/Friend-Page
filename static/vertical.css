@@ -1,22 +1,25 @@
-#wholeimg {
-  padding: 0px 80px;
+.imaghe {
+  padding: 0 15%;
   margin: 0;
   font-family: Monaco, monospace;
   font-weight: 100;
   font-size: 100%;
 }
 @media (max-width: 70em) {
-  #wholeimg {
+  .imaghe {
     padding: 1rem;
   }
 }
+
 .table-fixed {
   table-layout: fixed;
 }
+
 .table {
   display: table;
-  width: 90%;
+  width: 100%;
 }
+
 @media (min-width: 50em) {
   .table-cell {
     display: table-cell;
@@ -24,10 +27,9 @@
   }
 }
 .table-cell__text {
-  color: #526346;
-  padding: 5rem;
+  color: black;
+  padding: 20px;
   text-align: left;
-  
 }
 .table-cell__text h3 {
   font-size: 1.5rem;
@@ -47,6 +49,7 @@
     font-size: 0.6rem;
   }
 }
+
 .table.example2 {
   margin-top: 2rem;
   background: none;
@@ -63,12 +66,8 @@
 .table.example2 .table-cell__text {
   color: #52665f;
 }
-img {
-  max-width: 70%;
-  border: none;
-  padding: 0px 200px 0px;
-}
 
-body {
-    background: #f2f2f2;
-  }
+img {
+  max-width: 100%;
+  border: none;
+}
