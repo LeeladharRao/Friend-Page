@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  
+  .align-centered {
+    font-family: 'Pacifico', cursive;
+
+    font-size: 20px;
+    
+  }
+  
+  body {
+    background: #f2f2f2;
+  }
+  
+  .contact {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: 400;
+    
+  }
+  
+  img.hero-image {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .layout-right-content {
+    color: #222222;
+  }
+  
+  

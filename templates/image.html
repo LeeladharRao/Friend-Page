@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}{{imagename}}{% endblock %}
+
+{% block head %}
+{% if alignment == 'v' %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vertical.css') }}">
+{% endif %}
+{% endblock %}
+
+
+{% block content %}
+<div id="wholeimg">
+  <div class="table table-fixed">
+    <div class="table-cell">
+      <img src="/static/images/{{imagename}}.jpg">
+    </div>
+    <div class="table-cell table-cell__text">
+      <h3>Side by side</h3>
+      <p>100% height, text horizontally and vertically aligned. Blocks are stacked 100% on smaller screens. </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

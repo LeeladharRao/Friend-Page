@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='gallery.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<br>
+<div class="nav-bar">
+    <nav class="nav-bar__nav">
+        <ul>
+            <li><a href="/gallery/portraits">Portraits</a></li>
+            <li><a href="/gallery/orders">Orders</a></li>
+            <li><a href="/gallery/paintings">Paintings</a></li>
+        </ul>
+    </nav>
+</div>
+
+<br>
+<br>
+
+{% block extentiond %}{% endblock %}
+
+{% endblock %}

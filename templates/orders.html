@@ -1,0 +1,38 @@
+{% extends "gallery.html" %}
+
+{% block title %}Portraits{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+
+
+{% block extentiond %}
+<div class="center">
+
+  <div class="gallery">
+    <div class="image image--big"><a href="./image/v/8243147">
+        <img class="lazy-image" data-src="/static/images/8243147.jpg" /></a>
+    </div>
+    <div class="image image--vertical"><a href="./image/v/5275754">
+        <img class="lazy-image" data-src="/static/images/5275754.jpg" /></a>
+    </div>
+    <div class="image image--vertical"><a href="./image/v/8715454">
+        <img class="lazy-image" data-src="/static/images/8715454.jpg" /></a>
+    </div>
+
+    <div class="image image--big"><a href="./image/v/7842028">
+        <img class="lazy-image" data-src="/static/images/7842028.jpg"></a>
+    </div>
+    <div class="image image--vertical"><a href="./image/v/6155499">
+        <img class="lazy-image" data-src="/static/images/6155499.jpg" /></a>
+    </div>
+    <div class="image image--big"><a href="./image/v/6435601">
+        <img class="lazy-image" data-src="/static/images/6435601.jpg"></a>
+    </div>
+
+  </div>
+</div>
+<script src="/static/home.js"></script>
+
+{% endblock %}

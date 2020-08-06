@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    {% block head %}
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+
+</head>
+
+<body>
+    <div class="animato">
+        <div id="headline">
+            <h1>Themeless Artist</h1>
+        </div>
+
+        <div class="nav-bar">
+            <nav class="nav-bar__nav">
+                <ul>
+                    <li><a href="{{ url_for('home')}}">Home</a></li>
+                    <li><a href="{{ url_for('about')}}">About</a></li>
+                    <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                    <li><a href="/gallery/portraits">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <br>
+        <br>
+
+        {% block content %}{% endblock %}
+
+        <br>
+        <br>
+        <footer>
+            <ul class="social-networks square spin-icon">
+                <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+                <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
+                <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
+                <li><a href="https://twitch.tv" class="icon-twitch">Twitch</a></li>
+                <li><a href="https://github.com" class="icon-github">GitHub</a></li>
+                <li><a href="https://pinterest.com" class="icon-pinterest">Pinterest</a></li>
+                <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
+                <li><a href="https://vimeo.com" class="icon-vimeo">Vimeo</a></li>
+            </ul>
+            <div class="texty">Handcrafted each portrait with ♥ </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
